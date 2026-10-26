@@ -1,0 +1,19 @@
+name: macOS build and tests
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Test with synthetic data
+        run: bash scripts/test.sh
+      - name: Build for Apple Silicon and Intel
+        env:
+          LIBRE_ARCHS: arm64 x86_64
+        run: bash scripts/build.sh
