@@ -62,7 +62,7 @@ Charts retain missing intervals and original measurement dates. LibreView device
 
 ## Development
 
-`bash scripts/test.sh` runs model, client, calendar, report-parsing, and archive checks using synthetic data and mock responses. It does not access an account or the network. CI also builds both CPU architectures. Successful mock tests do not establish current live-service compatibility.
+`bash scripts/test.sh` runs model, client, calendar, report-parsing, and archive checks locally using synthetic data and mock responses. It does not access an account or the network. Use `LIBRE_ARCHS="arm64 x86_64" bash scripts/build.sh` to build both CPU architectures locally. This repository does not use GitHub Actions. Successful mock tests do not establish current live-service compatibility.
 
 `bash scripts/render-previews.sh` generates synthetic screenshots under `build/previews` without restoring accounts or fetching readings. See [CONTRIBUTING.md](CONTRIBUTING.md) before submitting a change.
 
