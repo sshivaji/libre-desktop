@@ -1,0 +1,42 @@
+LIBRE DESKTOP — INSTALL AND CONNECT
+
+macOS 14 or later. One universal app for Apple Silicon and Intel Macs.
+
+1. Open the DMG and drag Libre Desktop.app to Applications.
+   If you downloaded the ZIP instead, unzip it and move the app to Applications.
+   Quit an older running copy before replacing it.
+
+2. Open Libre Desktop from Applications.
+   This community build is ad-hoc signed, not Apple Developer ID signed or
+   notarized. If macOS blocks it because the developer cannot be verified,
+   and you trust the download from the repository below, first try opening
+   the app, then go to System Settings > Privacy & Security > Open Anyway.
+   Approve only Libre Desktop. Managed Macs may not allow this exception.
+   Apple's instructions: https://support.apple.com/en-us/102445
+
+3. Sign in with the LibreLinkUp account that already shows your readings.
+   Region detection is automatic. Choose a person if more than one is listed.
+
+4. For daily, weekly, and monthly history, expand Connect LibreView history
+   and sign in with your LibreView website account. The two logins are saved
+   separately in macOS Keychain.
+
+No Xcode, Python, Terminal commands, or developer account are needed to run
+the downloaded app. Internet access and the appropriate Libre accounts are
+needed to retrieve readings. A new signing identity may require signing in
+again or approving Keychain access when updating an existing local build.
+
+Close the window to keep the menu-bar app running. Click its droplet icon
+and choose Show glucose widget to reopen it. Use the pin button to keep the
+widget above other windows. This is a floating desktop app, not a widget
+in the macOS Add Widgets gallery. The Mac must be awake for updates.
+
+Independent viewer, not an Abbott product. For reference only; use the
+official Libre app for treatment decisions and glucose alarms.
+
+Source, screenshots, license, and releases:
+https://github.com/sshivaji/libre-desktop
+
+Local tests and Apple Silicon builds are verified. Intel is cross-compiled;
+it has not yet been tested on Intel hardware. Service compatibility depends
+on Abbott's undocumented APIs and can change.

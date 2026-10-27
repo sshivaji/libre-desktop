@@ -9,4 +9,4 @@ done
 swiftc -swift-version 5 "${sources[@]}" scripts/render-libre.swift \
     -o build/render-previews -framework AppKit -framework SwiftUI -framework Charts -framework Security
 # The renderer does not call start(), restore Keychain accounts, or fetch data.
-build/render-previews "$PWD/build/previews"
+build/render-previews "$PWD/build/previews" -AppleLanguages '(en)' -AppleLocale en_US
