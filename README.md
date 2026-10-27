@@ -2,7 +2,7 @@
 
 A native macOS glucose viewer with a floating desktop widget, a menu-bar reading, and live, daily, weekly, and monthly charts. Built with Swift, SwiftUI, AppKit, and Charts.
 
-Live readings come from your existing **LibreLinkUp** account. Optional history comes from your **LibreView** account. This project runs independently of Garmin and has no Python or third-party package dependencies.
+See your current glucose and trend through **LibreLinkUp**, and connect **LibreView** to explore daily, weekly, and monthly history.
 
 **[Download the Mac app (.dmg)](https://github.com/sshivaji/libre-desktop/releases/latest/download/Libre-Desktop-0.2.2-universal.dmg)** · [ZIP bundle](https://github.com/sshivaji/libre-desktop/releases/latest/download/Libre-Desktop-0.2.2-universal.zip) · [Release notes and checksums](https://github.com/sshivaji/libre-desktop/releases/latest)
 
@@ -91,8 +91,6 @@ Charts retain missing intervals and original measurement dates. LibreView device
 `bash scripts/render-previews.sh` generates synthetic screenshots under `build/previews` without restoring accounts or fetching readings. See [CONTRIBUTING.md](CONTRIBUTING.md) before submitting a change.
 
 `bash scripts/package-release.sh` builds both CPU architectures locally and creates a DMG, ZIP, install guide, and SHA-256 checksums under `build/releases/<version>`. Release assets contain the app and public documentation, with no credentials or local archives. No GitHub Actions are used.
-
-The source was separated from the local Epix Desktop workspace. The standalone project contains only the Libre app, tests, and build tools; no personal readings, account exports, or signing material are included.
 
 ## License
 

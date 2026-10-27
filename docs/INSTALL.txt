@@ -21,9 +21,8 @@ macOS 14 or later. One universal app for Apple Silicon and Intel Macs.
    and sign in with your LibreView website account. The two logins are saved
    separately in macOS Keychain.
 
-No Xcode, Python, Terminal commands, or developer account are needed to run
-the downloaded app. Internet access and the appropriate Libre accounts are
-needed to retrieve readings. A new signing identity may require signing in
+The downloaded app is ready to run. Internet access and the appropriate
+Libre accounts are needed to retrieve readings. A new signing identity may require signing in
 again or approving Keychain access when updating an existing local build.
 
 Close the window to keep the menu-bar app running. Click its droplet icon

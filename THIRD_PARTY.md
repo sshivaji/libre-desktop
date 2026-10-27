@@ -1,6 +1,6 @@
 # Acknowledgments and protocol references
 
-Libre Desktop is distributed under AGPL-3.0; see [LICENSE](LICENSE). The app uses Apple's system frameworks. No third-party source packages, Python runtime, or Garmin protocol code are bundled.
+Libre Desktop is distributed under AGPL-3.0; see [LICENSE](LICENSE). The app uses Apple's system frameworks for its interface, charts, networking, and credential storage.
 
 The independent LibreLinkUp client was informed by request/response formats documented in [DiaKEM/libre-link-up-api-client](https://github.com/DiaKEM/libre-link-up-api-client) and [nightscout/nightscout-connect](https://github.com/nightscout/nightscout-connect). These include regional hosts, request headers, the hashed Account-Id header, UTC measurement timestamps, trends, and login/connections/graph schemas. No source code or packages from those projects are bundled.
 

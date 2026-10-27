@@ -37,7 +37,7 @@ done
 lipo -create "${executables[@]}" -output "$APP/Contents/MacOS/LibreDesktop"
 cp LICENSE THIRD_PARTY.md README.md "$APP/Contents/Resources/Licenses/"
 
-# A local build needs no account, certificates, Python, or downloaded tools.
+# Local builds use macOS tools and ad-hoc signing.
 # Maintainers can supply an identity already present in their own Keychain.
 identity="${LIBRE_SIGNING_IDENTITY:--}"
 if [ "$identity" = '-' ]; then
